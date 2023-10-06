@@ -38,6 +38,7 @@ namespace FolhaFigital_Projeto.model.dao
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                //Teste
                 throw ex;
             }
             finally

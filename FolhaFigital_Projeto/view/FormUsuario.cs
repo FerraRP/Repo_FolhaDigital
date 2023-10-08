@@ -16,5 +16,10 @@ namespace FolhaFigital_Projeto.view
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

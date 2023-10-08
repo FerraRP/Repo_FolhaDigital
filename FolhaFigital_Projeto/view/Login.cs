@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FolhaFigital_Projeto.model.dao;
 
 namespace FolhaFigital_Projeto.view
+    
 {
     public partial class formLogin : Form
     {
@@ -40,6 +42,16 @@ namespace FolhaFigital_Projeto.view
         private void txtLogSenha_MouseUp(object sender, MouseEventArgs e)
         {
             txtLogSenha.UseSystemPasswordChar = true;
+        }
+
+        private void txtLogEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

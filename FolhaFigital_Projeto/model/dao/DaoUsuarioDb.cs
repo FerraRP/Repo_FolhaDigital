@@ -22,7 +22,7 @@ namespace FolhaFigital_Projeto.model.dao
             try
             {
                 con = new SqlConnection(url);
-                String sql = "insert into usuario[nome, matricula, email, telefone, data_nascimento, cpf, senha] values(@nome,@matricula,@email,@telefone,@data_nascimento,@cpf,@senha);";
+                String sql = "insert into usuario[nome, matricula, email, telefone, data_nascimento, cpf, senha, status] values(@nome,@matricula,@email,@telefone,@data_nascimento,@cpf,@senha, @status);";
                 cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@nome", useEnt.nome);
                 cmd.Parameters.AddWithValue("@matricula", useEnt.matricula);
@@ -31,6 +31,7 @@ namespace FolhaFigital_Projeto.model.dao
                 cmd.Parameters.AddWithValue("@data_nascimento", useEnt.data_nascimento);
                 cmd.Parameters.AddWithValue("@cpf", useEnt.cpf);
                 cmd.Parameters.AddWithValue("@senha", useEnt.senha);
+                cmd.Parameters.AddWithValue("@status", useEnt.status);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -38,7 +39,7 @@ namespace FolhaFigital_Projeto.model.dao
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                //Teste
+                
                 throw ex;
             }
             finally

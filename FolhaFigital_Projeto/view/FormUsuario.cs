@@ -21,5 +21,17 @@ namespace FolhaFigital_Projeto.view
         {
             
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu MenuInicial = new Menu();
+            MenuInicial.Show();
+
+            this.Hide();
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

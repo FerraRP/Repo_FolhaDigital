@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuario));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnVoltar = new System.Windows.Forms.Panel();
+            this.btnConsultaUse = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtConsultaMatri = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.BtExcluir = new System.Windows.Forms.Button();
             this.BtAlterar = new System.Windows.Forms.Button();
             this.btInserir = new System.Windows.Forms.Button();
@@ -53,32 +58,83 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtDataNascimento = new System.Windows.Forms.TextBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtConsultaMatri = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btnConsultaUse = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnVoltar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // btnVoltar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(47)))), ((int)(((byte)(73)))));
-            this.panel1.Controls.Add(this.btnConsultaUse);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.txtConsultaMatri);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.BtExcluir);
-            this.panel1.Controls.Add(this.BtAlterar);
-            this.panel1.Controls.Add(this.btInserir);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(247, 642);
-            this.panel1.TabIndex = 0;
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(47)))), ((int)(((byte)(73)))));
+            this.btnVoltar.Controls.Add(this.button1);
+            this.btnVoltar.Controls.Add(this.btnConsultaUse);
+            this.btnVoltar.Controls.Add(this.label11);
+            this.btnVoltar.Controls.Add(this.txtConsultaMatri);
+            this.btnVoltar.Controls.Add(this.label13);
+            this.btnVoltar.Controls.Add(this.label12);
+            this.btnVoltar.Controls.Add(this.BtExcluir);
+            this.btnVoltar.Controls.Add(this.BtAlterar);
+            this.btnVoltar.Controls.Add(this.btInserir);
+            this.btnVoltar.Controls.Add(this.pictureBox1);
+            this.btnVoltar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnVoltar.Location = new System.Drawing.Point(0, 0);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(247, 642);
+            this.btnVoltar.TabIndex = 0;
+            // 
+            // btnConsultaUse
+            // 
+            this.btnConsultaUse.BackColor = System.Drawing.Color.Silver;
+            this.btnConsultaUse.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaUse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnConsultaUse.Location = new System.Drawing.Point(71, 448);
+            this.btnConsultaUse.Name = "btnConsultaUse";
+            this.btnConsultaUse.Size = new System.Drawing.Size(91, 32);
+            this.btnConsultaUse.TabIndex = 23;
+            this.btnConsultaUse.Text = "Buscar";
+            this.btnConsultaUse.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Lavender;
+            this.label11.Location = new System.Drawing.Point(80, 393);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(73, 18);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Matrícula";
+            // 
+            // txtConsultaMatri
+            // 
+            this.txtConsultaMatri.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConsultaMatri.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConsultaMatri.Location = new System.Drawing.Point(22, 423);
+            this.txtConsultaMatri.Name = "txtConsultaMatri";
+            this.txtConsultaMatri.Size = new System.Drawing.Size(199, 19);
+            this.txtConsultaMatri.TabIndex = 22;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Lavender;
+            this.label13.Location = new System.Drawing.Point(69, 355);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(93, 22);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "Consulta";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Lavender;
+            this.label12.Location = new System.Drawing.Point(69, 109);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(95, 22);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Cadastro";
             // 
             // BtExcluir
             // 
@@ -262,6 +318,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(383, 19);
             this.txtEmail.TabIndex = 15;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtCpf
             // 
@@ -317,59 +374,18 @@
             this.txtStatus.Size = new System.Drawing.Size(278, 19);
             this.txtStatus.TabIndex = 21;
             // 
-            // label12
+            // button1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Lavender;
-            this.label12.Location = new System.Drawing.Point(69, 109);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 22);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Cadastro";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Lavender;
-            this.label13.Location = new System.Drawing.Point(69, 355);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(93, 22);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Consulta";
-            // 
-            // txtConsultaMatri
-            // 
-            this.txtConsultaMatri.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConsultaMatri.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConsultaMatri.Location = new System.Drawing.Point(22, 423);
-            this.txtConsultaMatri.Name = "txtConsultaMatri";
-            this.txtConsultaMatri.Size = new System.Drawing.Size(199, 19);
-            this.txtConsultaMatri.TabIndex = 22;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Lavender;
-            this.label11.Location = new System.Drawing.Point(80, 393);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 18);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Matrícula";
-            // 
-            // btnConsultaUse
-            // 
-            this.btnConsultaUse.BackColor = System.Drawing.Color.Silver;
-            this.btnConsultaUse.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultaUse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnConsultaUse.Location = new System.Drawing.Point(71, 448);
-            this.btnConsultaUse.Name = "btnConsultaUse";
-            this.btnConsultaUse.Size = new System.Drawing.Size(91, 32);
-            this.btnConsultaUse.TabIndex = 23;
-            this.btnConsultaUse.Text = "Buscar";
-            this.btnConsultaUse.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(71, 598);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 32);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Voltar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormUsuario
             // 
@@ -395,11 +411,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnVoltar);
             this.Name = "FormUsuario";
             this.Text = "FormUsuario";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.btnVoltar.ResumeLayout(false);
+            this.btnVoltar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -408,7 +424,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel btnVoltar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtExcluir;
         private System.Windows.Forms.Button BtAlterar;
@@ -437,5 +453,6 @@
         private System.Windows.Forms.TextBox txtConsultaMatri;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button1;
     }
 }

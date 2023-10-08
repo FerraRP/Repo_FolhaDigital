@@ -40,6 +40,7 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.pneMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -145,6 +146,7 @@
             this.btnUsuario.TabIndex = 3;
             this.btnUsuario.Text = "Usuários";
             this.btnUsuario.UseVisualStyleBackColor = true;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // btnHome
             // 
@@ -178,13 +180,31 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnFechar
+            // 
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFechar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.ForeColor = System.Drawing.Color.Red;
+            this.btnFechar.Location = new System.Drawing.Point(1172, 0);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(30, 30);
+            this.btnFechar.TabIndex = 6;
+            this.btnFechar.Text = "x";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 648);
             this.ControlBox = false;
+            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pneMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Menu";
@@ -215,5 +235,6 @@
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

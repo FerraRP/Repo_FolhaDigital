@@ -8,22 +8,41 @@ using System.Drawing;
 
 namespace FolhaFigital_Projeto.model.dao
 {
+    using FolhaFigital_Projeto.model.dao;
     using FolhaFigital_Projeto.controller;
     using FolhaFigital_Projeto.model.bean;
+    using FolhaFigital_Projeto.view;
+    using System.Windows.Forms;
 
     internal class DaoUsuarioDb
     {
-        private SqlConnection con;
-        private SqlCommand cmd;      
-        private readonly String url = "Data Source=DESKTOP-6MM7300\\HEXTEC;Initial Catalog = db_HexTec; Integrated Security = True";
+        public bool logValidado;
+        public String mensagem = "";
+
+       
+        public bool validaLog(string email, string senha)
+        {
+            LoginDaoComandos loginDao = new LoginDaoComandos();
+            logValidado = loginDao.verificarlogin(email, senha);
+
+            if(!loginDao.mensagem.Equals(""))
+            {
+                this.mensagem = loginDao.mensagem;
+            }
+            return logValidado;
+        }
+
+
 
         public Usuario Inserir (Usuario useEnt)
         {
+            ConexaoDb conexaoBanco = new ConexaoDb();
+            
             try
             {
-                con = new SqlConnection(url);
+                //url = new SqlConnection();
                 String sql = "insert into usuario[nome, matricula, email, telefone, data_nascimento, cpf, senha, status] values(@nome,@matricula,@email,@telefone,@data_nascimento,@cpf,@senha, @status);";
-                cmd = new SqlCommand(sql, con);
+                SqlCommand cmd = new SqlCommand();
                 cmd.Parameters.AddWithValue("@nome", useEnt.nome);
                 cmd.Parameters.AddWithValue("@matricula", useEnt.matricula);
                 cmd.Parameters.AddWithValue("@email", useEnt.email);
@@ -33,7 +52,7 @@ namespace FolhaFigital_Projeto.model.dao
                 cmd.Parameters.AddWithValue("@senha", useEnt.senha);
                 cmd.Parameters.AddWithValue("@status", useEnt.status);
 
-                con.Open();
+                //url.Open();
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -44,7 +63,7 @@ namespace FolhaFigital_Projeto.model.dao
             }
             finally
             {
-                con.Close();
+                //.Close();
             }
             return useEnt;
 

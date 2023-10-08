@@ -123,6 +123,7 @@
             this.btnFechar.TabIndex = 5;
             this.btnFechar.Text = "x";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
             // 
             // panel2
             // 
@@ -145,13 +146,13 @@
             // 
             // txtLogEmail
             // 
+            this.txtLogEmail.BackColor = System.Drawing.SystemColors.Control;
             this.txtLogEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLogEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogEmail.Location = new System.Drawing.Point(103, 15);
+            this.txtLogEmail.Location = new System.Drawing.Point(113, 16);
             this.txtLogEmail.Name = "txtLogEmail";
             this.txtLogEmail.Size = new System.Drawing.Size(349, 19);
             this.txtLogEmail.TabIndex = 10;
-            this.txtLogEmail.TextChanged += new System.EventHandler(this.txtLogEmail_TextChanged);
             // 
             // label4
             // 
@@ -194,15 +195,16 @@
             // 
             // txtLogSenha
             // 
+            this.txtLogSenha.BackColor = System.Drawing.SystemColors.Control;
             this.txtLogSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLogSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogSenha.Location = new System.Drawing.Point(104, 13);
+            this.txtLogSenha.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.txtLogSenha.Location = new System.Drawing.Point(113, 15);
             this.txtLogSenha.Name = "txtLogSenha";
-            this.txtLogSenha.Size = new System.Drawing.Size(349, 19);
+            this.txtLogSenha.Size = new System.Drawing.Size(350, 19);
             this.txtLogSenha.TabIndex = 11;
             this.txtLogSenha.UseSystemPasswordChar = true;
             this.txtLogSenha.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnSenha_MouseDown);
-            this.txtLogSenha.MouseUp += new System.Windows.Forms.MouseEventHandler(this.txtLogSenha_MouseUp);
             // 
             // label5
             // 
@@ -213,7 +215,6 @@
             this.label5.Size = new System.Drawing.Size(60, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Senha:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnSenha
             // 
@@ -225,6 +226,7 @@
             this.btnSenha.TabIndex = 9;
             this.btnSenha.TabStop = false;
             this.btnSenha.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnSenha_MouseDown);
+            this.btnSenha.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnSenha_MouseUp);
             // 
             // btnEntrar
             // 

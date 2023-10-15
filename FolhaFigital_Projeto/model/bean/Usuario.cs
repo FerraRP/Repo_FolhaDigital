@@ -13,7 +13,6 @@ namespace FolhaFigital_Projeto.model.bean
         public string matricula { get; set; }
         public string email { get; set; }
         public int telefone { get; set; }
-        public DateTime data_nascimento { get; set; }
         public int cpf {  get; set; }
         public string senha {  get; set; } 
         public string status {  get; set; }
@@ -33,7 +32,6 @@ namespace FolhaFigital_Projeto.model.bean
             this.matricula = Matricula;
             this.email = Email;
             this.telefone = Telefone;
-            this.data_nascimento = Data_nascimento;
             this.cpf = Cpf;
             this.senha = Senha;
             this.status = Status;
@@ -46,7 +44,6 @@ namespace FolhaFigital_Projeto.model.bean
             this.matricula = Matricula;
             this.email = Email;
             this.telefone = Telefone;
-            this.data_nascimento = Data_nascimento;
             this.cpf = Cpf;
             this.senha = Senha;
             this.status = Status;
@@ -54,7 +51,7 @@ namespace FolhaFigital_Projeto.model.bean
 
         public override string ToString()
         {
-            return "[ ID Usuário: " +id_usuario+ "Nome: " +nome+ "Matricula: " +matricula+ "E-mail: " +email+ "Telefone: " +telefone+ "Data de Nascimento: " +data_nascimento+ "CPF: " +cpf+ "Senha: " +senha+ "Status: " +status+ "]";
+            return "[ ID Usuário: " +id_usuario+ "Nome: " +nome+ "Matricula: " +matricula+ "E-mail: " +email+ "Telefone: " +telefone+ "CPF: " +cpf+ "Senha: " +senha+ "Status: " +status+ "]";
         }
     }
 }

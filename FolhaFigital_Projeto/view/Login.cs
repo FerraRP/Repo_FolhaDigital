@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Policy;
 using FolhaFigital_Projeto.model.dao;
+using FolhaFigital_Projeto.controller;
 
 namespace FolhaFigital_Projeto.view
     

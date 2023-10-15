@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FolhaFigital_Projeto.model.dao;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -6,9 +7,9 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FolhaFigital_Projeto.model.dao
+namespace FolhaFigital_Projeto.controller
 {
-     class LoginDaoComandos
+     class ValidaLogUsuario
     {
         public bool logValidado;
         public String mensagem = "";
@@ -30,6 +31,8 @@ namespace FolhaFigital_Projeto.model.dao
                 {
                     logValidado = true;
                 }
+                url.desconectar();
+                
             }
             catch (Exception ex)
             {
@@ -39,6 +42,31 @@ namespace FolhaFigital_Projeto.model.dao
             return logValidado;
         }
 
+
         
+        public String Inserir(String nome, String email, string senha)
+        {
+            cmd.CommandText = "insert into usuario_teste (nome, email, senha) values (@nome,@email,@senha)";
+            cmd.Parameters.AddWithValue("@nome", nome);
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@senha", senha);
+
+            
+            try
+            {
+                cmd.Connection = url.conectar();
+                cmd.ExecuteNonQuery();
+                url.desconectar();
+
+                this.mensagem = "Cadastrado com sucesso!";
+                
+            }
+            catch (SqlException)
+            {
+                this.mensagem = "Erro com o banco de dados";
+            }
+            return mensagem;
+        }
     }
+
 }

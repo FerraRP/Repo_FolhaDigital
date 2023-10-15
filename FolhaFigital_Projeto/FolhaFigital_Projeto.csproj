@@ -46,11 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controller\ControllerUsuario.cs" />
+    <Compile Include="controller\ValidaLogUsuario.cs" />
     <Compile Include="model\bean\Usuario.cs" />
     <Compile Include="model\dao\ConexaoDb.cs" />
     <Compile Include="model\dao\DaoUsuarioDb.cs" />
-    <Compile Include="model\dao\LoginDaoComandos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="view\FormUsuario.cs">

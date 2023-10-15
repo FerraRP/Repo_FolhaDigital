@@ -32,7 +32,5 @@ namespace FolhaFigital_Projeto.view
 
             this.Hide();
         }
-
-        
     }
 }

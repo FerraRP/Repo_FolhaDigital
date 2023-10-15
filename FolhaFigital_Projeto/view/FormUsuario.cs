@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FolhaFigital_Projeto.model.dao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,29 @@ namespace FolhaFigital_Projeto.view
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btInserir_Click(object sender, EventArgs e)
+        {
+            DaoUsuarioDb CadUsuario = new DaoUsuarioDb();
+
+            String mensagem = CadUsuario.Inserir(txtNome.Text, txtEmail.Text, txtSenha.Text);
+            if (CadUsuario.logValidado)
+            {
+                MessageBox.Show(mensagem, "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNome.Clear();
+                txtEmail.Clear();
+                txtSenha.Clear();
+            }
+            else
+            {
+                MessageBox.Show(CadUsuario.mensagem);
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

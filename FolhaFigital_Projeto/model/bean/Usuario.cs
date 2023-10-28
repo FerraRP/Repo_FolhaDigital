@@ -13,9 +13,9 @@ namespace FolhaFigital_Projeto.model.bean
         public string matricula { get; set; }
         public string email { get; set; }
         public int telefone { get; set; }
-        public DateTime data_nascimento { get; set; }
         public int cpf {  get; set; }
         public string senha {  get; set; } 
+        public string status {  get; set; }
 
         public Usuario() 
         {
@@ -26,32 +26,32 @@ namespace FolhaFigital_Projeto.model.bean
             this.email = Email;
         }
 
-        public Usuario(string Nome, string Matricula, string Email, int Telefone, DateTime Data_nascimento, int Cpf, string Senha)
+        public Usuario(string Nome, string Matricula, string Email, int Telefone, DateTime Data_nascimento, int Cpf, string Senha, string Status)
         {
             this.nome = Nome;
             this.matricula = Matricula;
             this.email = Email;
             this.telefone = Telefone;
-            this.data_nascimento = Data_nascimento;
             this.cpf = Cpf;
             this.senha = Senha;
+            this.status = Status;
         }
 
-        public Usuario(int Id_usuario, string Nome, string Matricula, string Email, int Telefone, DateTime Data_nascimento, int Cpf, string Senha)
+        public Usuario(int Id_usuario, string Nome, string Matricula, string Email, int Telefone, DateTime Data_nascimento, int Cpf, string Senha, string Status)
         {
             this.id_usuario = Id_usuario;
             this.nome = Nome;
             this.matricula = Matricula;
             this.email = Email;
             this.telefone = Telefone;
-            this.data_nascimento = Data_nascimento;
             this.cpf = Cpf;
             this.senha = Senha;
+            this.status = Status;
         }
 
         public override string ToString()
         {
-            return "[ ID Usuário: " +id_usuario+ "Nome: " +nome+ "Matricula: " +matricula+ "E-mail: " +email+ "Telefone: " +telefone+ "Data de Nascimento: " +data_nascimento+ "CPF: " +cpf+ "Senha: " +senha+ "]";
+            return "[ ID Usuário: " +id_usuario+ "Nome: " +nome+ "Matricula: " +matricula+ "E-mail: " +email+ "Telefone: " +telefone+ "CPF: " +cpf+ "Senha: " +senha+ "Status: " +status+ "]";
         }
     }
 }

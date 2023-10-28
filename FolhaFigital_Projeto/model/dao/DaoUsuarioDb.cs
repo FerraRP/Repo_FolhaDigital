@@ -5,48 +5,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Drawing;
+using FolhaFigital_Projeto.model.dao;
+using FolhaFigital_Projeto.controller;
+using FolhaFigital_Projeto.model.bean;
+using FolhaFigital_Projeto.view;
+using System.Windows.Forms;
 
 namespace FolhaFigital_Projeto.model.dao
 {
-    using FolhaFigital_Projeto.controller;
-    using FolhaFigital_Projeto.model.bean;
-
     internal class DaoUsuarioDb
     {
-        private SqlConnection con;
-        private SqlCommand cmd;      
-        private readonly String url = "Data Source=DESKTOP-6MM7300\\HEXTEC;Initial Catalog = db_HexTec; Integrated Security = True";
+        public bool logValidado;
+        public String mensagem = "";
 
-        public Usuario Inserir (Usuario useEnt)
+       
+        public bool validaLog(string email, string senha)
         {
-            try
-            {
-                con = new SqlConnection(url);
-                String sql = "insert into usuario[nome, matricula, email, telefone, data_nascimento, cpf, senha] values(@nome,@matricula,@email,@telefone,@data_nascimento,@cpf,@senha);";
-                cmd = new SqlCommand(sql, con);
-                cmd.Parameters.AddWithValue("@nome", useEnt.nome);
-                cmd.Parameters.AddWithValue("@matricula", useEnt.matricula);
-                cmd.Parameters.AddWithValue("@email", useEnt.email);
-                cmd.Parameters.AddWithValue("@telefone", useEnt.telefone);
-                cmd.Parameters.AddWithValue("@data_nascimento", useEnt.data_nascimento);
-                cmd.Parameters.AddWithValue("@cpf", useEnt.cpf);
-                cmd.Parameters.AddWithValue("@senha", useEnt.senha);
+            ValidaLogUsuario loginValid = new ValidaLogUsuario();
+            logValidado = loginValid.verificarlogin(email, senha);
 
-                con.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
+            if(!loginValid.mensagem.Equals(""))
             {
-                Console.WriteLine(ex.Message);
-                //Teste
-                throw ex;
+                this.mensagem = loginValid.mensagem;
             }
-            finally
-            {
-                con.Close();
-            }
-            return useEnt;
+            return logValidado;
+        }
 
+        public String Inserir(String nome, String email, string senha)
+        {
+            ValidaLogUsuario CadastroValid = new ValidaLogUsuario();
+            this.mensagem = CadastroValid.Inserir(nome, email, senha);
+            return mensagem;
         }
 
     }

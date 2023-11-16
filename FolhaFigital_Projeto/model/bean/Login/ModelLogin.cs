@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Drawing;
 using FolhaFigital_Projeto.model.dao;
-using FolhaFigital_Projeto.controller;
+using FolhaFigital_Projeto.controller.Login;
 using FolhaFigital_Projeto.model.bean;
-using FolhaFigital_Projeto.view;
 using System.Windows.Forms;
+using System.Runtime.ConstrainedExecution;
 
-namespace FolhaFigital_Projeto.model.dao
+namespace FolhaFigital_Projeto.model.bean.Login
 {
-    internal class DaoUsuarioDb
+    internal class ModelLogin
     {
         public bool logValidado;
         public String mensagem = "";
-
-       
-        public bool validaLog(string email, string senha)
+        
+         public bool validaLog(string email, string senha)
         {
-            ValidaLogUsuario loginValid = new ValidaLogUsuario();
+            ValidaLogin loginValid = new ValidaLogin();
             logValidado = loginValid.verificarlogin(email, senha);
 
             if(!loginValid.mensagem.Equals(""))
@@ -30,14 +29,5 @@ namespace FolhaFigital_Projeto.model.dao
             }
             return logValidado;
         }
-
-        public String Inserir(String nome, String email, string senha)
-        {
-            ValidaLogUsuario CadastroValid = new ValidaLogUsuario();
-            this.mensagem = CadastroValid.Inserir(nome, email, senha);
-            return mensagem;
-        }
-
     }
-
 }

@@ -46,10 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controller\ValidaLogUsuario.cs" />
-    <Compile Include="model\bean\Usuario.cs" />
+    <Compile Include="controller\Login\ValidaLogin.cs" />
+    <Compile Include="controller\Usuario\ValidaBanco.cs" />
+    <Compile Include="controller\Usuario\ValidaEmpresa.cs" />
+    <Compile Include="controller\Usuario\ValidaEndereco.cs" />
+    <Compile Include="controller\Usuario\ValidaUsuario.cs" />
+    <Compile Include="model\bean\TelaUsuario\BancoBean.cs" />
+    <Compile Include="model\bean\TelaUsuario\EmpresaBean.cs" />
+    <Compile Include="model\bean\TelaUsuario\EnderecoBean.cs" />
+    <Compile Include="model\bean\Login\ModelLogin.cs" />
+    <Compile Include="model\bean\TelaUsuario\Endereco\EnderecoBuscar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Endereco\EnderecoCadastrar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Endereco\EnderecoEditar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Endereco\EnderecoExcluir.cs" />
+    <Compile Include="model\bean\TelaUsuario\Usuario\UseBuscar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Usuario\UseCadastrar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Usuario\UseEditar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Usuario\UseExcluir.cs" />
+    <Compile Include="model\bean\TelaUsuario\UsuarioBean.cs" />
     <Compile Include="model\dao\ConexaoDb.cs" />
-    <Compile Include="model\dao\DaoUsuarioDb.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="view\FormUsuario.cs">
@@ -102,6 +117,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="model\bean\TelaUsuario\Banco\" />
+    <Folder Include="model\bean\TelaUsuario\Empresa\" />
     <Folder Include="script\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

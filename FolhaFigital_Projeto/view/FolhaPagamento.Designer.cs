@@ -48,6 +48,7 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnGerarFolha = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -286,12 +287,26 @@
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader3.Width = 325;
             // 
+            // btnGerarFolha
+            // 
+            this.btnGerarFolha.BackColor = System.Drawing.SystemColors.Control;
+            this.btnGerarFolha.Font = new System.Drawing.Font("Arial", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.btnGerarFolha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(47)))), ((int)(((byte)(73)))));
+            this.btnGerarFolha.Location = new System.Drawing.Point(934, 566);
+            this.btnGerarFolha.Name = "btnGerarFolha";
+            this.btnGerarFolha.Size = new System.Drawing.Size(139, 39);
+            this.btnGerarFolha.TabIndex = 8;
+            this.btnGerarFolha.Text = "Gerar Folha";
+            this.btnGerarFolha.UseVisualStyleBackColor = false;
+            this.btnGerarFolha.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FolhaPagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 642);
             this.ControlBox = false;
+            this.Controls.Add(this.btnGerarFolha);
             this.Controls.Add(this.listFolha);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -339,5 +354,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.Button btnGerarFolha;
     }
 }

@@ -128,5 +128,10 @@ namespace FolhaFigital_Projeto.view
 
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Você tem certeza?", "Confirmar",MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        }
     }
 }

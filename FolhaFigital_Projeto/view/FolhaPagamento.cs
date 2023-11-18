@@ -62,7 +62,10 @@ namespace FolhaFigital_Projeto.view
 
         private void btnRelatorio_Click(object sender, EventArgs e)
         {
+            Relatorio TelaRelatorio = new Relatorio();
+            TelaRelatorio.Show();
 
+            this.Hide();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

@@ -103,5 +103,13 @@ namespace FolhaFigital_Projeto.view
 
             this.Hide();
         }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+            Relatorio TelaRelatorio = new Relatorio();
+            TelaRelatorio.Show();
+
+            this.Hide();
+        }
     }
 }

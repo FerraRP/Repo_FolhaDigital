@@ -53,5 +53,10 @@ namespace FolhaFigital_Projeto.view
         {
             Application.Exit();
         }
+
+        private void BtAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

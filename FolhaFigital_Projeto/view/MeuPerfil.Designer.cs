@@ -64,26 +64,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.btnVoltar = new System.Windows.Forms.Panel();
-            this.BtAlterar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnSenha = new System.Windows.Forms.PictureBox();
-            this.btnRelatorio = new System.Windows.Forms.Button();
-            this.btnFolhaPagamento = new System.Windows.Forms.Button();
-            this.btnUsuario = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnSenha = new System.Windows.Forms.PictureBox();
+            this.btnUsuario = new System.Windows.Forms.Button();
+            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.btnFolhaPagamento = new System.Windows.Forms.Button();
+            this.BtAlterar = new System.Windows.Forms.Button();
             this.btnVoltar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSenha)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSenha)).BeginInit();
             this.SuspendLayout();
             // 
             // btnFechar
@@ -297,19 +297,17 @@
             resources.ApplyResources(this.btnVoltar, "btnVoltar");
             this.btnVoltar.Name = "btnVoltar";
             // 
-            // BtAlterar
+            // panel1
             // 
-            this.BtAlterar.BackColor = System.Drawing.Color.Silver;
-            resources.ApplyResources(this.BtAlterar, "BtAlterar");
-            this.BtAlterar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtAlterar.Name = "BtAlterar";
-            this.BtAlterar.UseVisualStyleBackColor = false;
+            this.panel1.Controls.Add(this.pictureBox5);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
             // 
-            // pictureBox1
+            // pictureBox5
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -323,17 +321,41 @@
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // pictureBox2
             // 
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
+            // btnHome
+            // 
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnHome, "btnHome");
+            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnHome.Name = "btnHome";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // btnSenha
             // 
             resources.ApplyResources(this.btnSenha, "btnSenha");
             this.btnSenha.Name = "btnSenha";
             this.btnSenha.TabStop = false;
+            // 
+            // btnUsuario
+            // 
+            this.btnUsuario.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnUsuario, "btnUsuario");
+            this.btnUsuario.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.UseVisualStyleBackColor = true;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // btnRelatorio
             // 
@@ -353,35 +375,14 @@
             this.btnFolhaPagamento.UseVisualStyleBackColor = true;
             this.btnFolhaPagamento.Click += new System.EventHandler(this.btnFolhaPagamento_Click);
             // 
-            // btnUsuario
+            // BtAlterar
             // 
-            this.btnUsuario.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnUsuario, "btnUsuario");
-            this.btnUsuario.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.UseVisualStyleBackColor = true;
-            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnHome, "btnHome");
-            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnHome.Name = "btnHome";
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pictureBox5);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // pictureBox5
-            // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
+            this.BtAlterar.BackColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.BtAlterar, "BtAlterar");
+            this.BtAlterar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtAlterar.Name = "BtAlterar";
+            this.BtAlterar.UseVisualStyleBackColor = false;
+            this.BtAlterar.Click += new System.EventHandler(this.BtAlterar_Click);
             // 
             // MeuPerfil
             // 
@@ -429,13 +430,13 @@
             this.MinimizeBox = false;
             this.Name = "MeuPerfil";
             this.btnVoltar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSenha)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSenha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

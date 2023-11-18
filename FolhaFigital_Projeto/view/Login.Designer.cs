@@ -80,11 +80,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 26F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(13, 295);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 42);
+            this.label1.Size = new System.Drawing.Size(274, 39);
             this.label1.TabIndex = 2;
             this.label1.Text = "FOLHA DIGITAL";
             // 
@@ -231,6 +231,7 @@
             // btnEntrar
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(47)))), ((int)(((byte)(73)))));
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnEntrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEntrar.Location = new System.Drawing.Point(426, 367);
@@ -246,14 +247,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 540);
+            this.ControlBox = false;
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.formLogin_Load);
             this.panel1.ResumeLayout(false);

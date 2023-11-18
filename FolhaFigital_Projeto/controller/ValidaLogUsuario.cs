@@ -34,7 +34,7 @@ namespace FolhaFigital_Projeto.controller
                 url.desconectar();
                 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 this.mensagem = "Erro de acesso";
             }

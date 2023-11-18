@@ -49,39 +49,44 @@ namespace FolhaFigital_Projeto.view
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            DaoUsuarioDb usuarioDao = new DaoUsuarioDb();
-            usuarioDao.validaLog(txtLogEmail.Text, txtLogSenha.Text);
+            Menu MenuInicial = new Menu();
+                       MenuInicial.Show();
 
-            if (usuarioDao.mensagem.Equals(""))
-            {
-                if (txtLogEmail.Text == "" || txtLogSenha.Text == "")
-                {
-                    MessageBox.Show("Obrigatório o preenchiemento dos campos: Login e Senha", "Atenção!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    if (usuarioDao.logValidado)
-                    {
-                        Menu MenuInicial = new Menu();
-                        MenuInicial.Show();
+                       this.Hide();
 
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Usuário ou Senha inválidos-", "Atenção!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtLogEmail.Clear();
-                        txtLogSenha.Clear();
-                        txtLogEmail.Focus();
-                    }
+            //DaoUsuarioDb usuarioDao = new DaoUsuarioDb();
+            //usuarioDao.validaLog(txtLogEmail.Text, txtLogSenha.Text);
 
-                }
+            //if (usuarioDao.mensagem.Equals(""))
+            //{
+            //    if (txtLogEmail.Text == "" || txtLogSenha.Text == "")
+            //    {
+            //        MessageBox.Show("Obrigatório o preenchiemento dos campos: Login e Senha", "Atenção!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    }
+            //    else
+            //    {
+            //        if (usuarioDao.logValidado)
+            //        {
+            //            Menu MenuInicial = new Menu();
+            //            MenuInicial.Show();
 
-            }
-            else
-            {
-                MessageBox.Show(usuarioDao.mensagem);
-            }
+            //            this.Hide();
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("Usuário ou Senha inválidos-", "Atenção!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //            txtLogEmail.Clear();
+            //            txtLogSenha.Clear();
+            //            txtLogEmail.Focus();
+            //        }
+
+            //    }
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show(usuarioDao.mensagem);
+            //}
         }
 
     }

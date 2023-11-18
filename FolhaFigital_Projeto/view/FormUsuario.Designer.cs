@@ -61,6 +61,19 @@
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.txtPerfil = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.btnVoltar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -162,6 +175,7 @@
             this.BtExcluir.TabIndex = 11;
             this.BtExcluir.Text = "Excluir";
             this.BtExcluir.UseVisualStyleBackColor = false;
+            this.BtExcluir.Click += new System.EventHandler(this.BtExcluir_Click);
             // 
             // BtAlterar
             // 
@@ -174,6 +188,7 @@
             this.BtAlterar.TabIndex = 10;
             this.BtAlterar.Text = "Alterar";
             this.BtAlterar.UseVisualStyleBackColor = false;
+            this.BtAlterar.Click += new System.EventHandler(this.BtAlterar_Click);
             // 
             // btInserir
             // 
@@ -201,9 +216,9 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(268, 508);
+            this.listView1.Location = new System.Drawing.Point(268, 537);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(913, 122);
+            this.listView1.Size = new System.Drawing.Size(913, 93);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -319,84 +334,77 @@
             // 
             // txtNome
             // 
-            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(268, 55);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(383, 19);
+            this.txtNome.Size = new System.Drawing.Size(383, 26);
             this.txtNome.TabIndex = 14;
             // 
             // txtEmail
             // 
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(266, 107);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(383, 19);
+            this.txtEmail.Size = new System.Drawing.Size(383, 26);
             this.txtEmail.TabIndex = 15;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtCpf
             // 
-            this.txtCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCpf.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCpf.Location = new System.Drawing.Point(268, 168);
             this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(383, 19);
+            this.txtCpf.Size = new System.Drawing.Size(383, 26);
             this.txtCpf.TabIndex = 16;
+            this.txtCpf.TextChanged += new System.EventHandler(this.txtCpf_TextChanged);
             // 
             // txtSenha
             // 
-            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSenha.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(268, 235);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(383, 19);
+            this.txtSenha.Size = new System.Drawing.Size(383, 26);
             this.txtSenha.TabIndex = 17;
             // 
             // txtMatricula
             // 
-            this.txtMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMatricula.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatricula.Location = new System.Drawing.Point(697, 55);
             this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(278, 19);
+            this.txtMatricula.Size = new System.Drawing.Size(278, 26);
             this.txtMatricula.TabIndex = 18;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefone.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone.Location = new System.Drawing.Point(697, 107);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(278, 19);
+            this.txtTelefone.Size = new System.Drawing.Size(278, 26);
             this.txtTelefone.TabIndex = 19;
             // 
             // txtDataNascimento
             // 
-            this.txtDataNascimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDataNascimento.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataNascimento.Location = new System.Drawing.Point(697, 168);
             this.txtDataNascimento.Name = "txtDataNascimento";
-            this.txtDataNascimento.Size = new System.Drawing.Size(278, 19);
+            this.txtDataNascimento.Size = new System.Drawing.Size(278, 26);
             this.txtDataNascimento.TabIndex = 20;
             // 
             // txtStatus
             // 
-            this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtStatus.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStatus.Location = new System.Drawing.Point(697, 235);
             this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(278, 19);
+            this.txtStatus.Size = new System.Drawing.Size(278, 26);
             this.txtStatus.TabIndex = 21;
+            this.txtStatus.TextChanged += new System.EventHandler(this.txtStatus_TextChanged);
             // 
             // txtPerfil
             // 
-            this.txtPerfil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPerfil.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPerfil.Location = new System.Drawing.Point(697, 298);
             this.txtPerfil.Name = "txtPerfil";
-            this.txtPerfil.Size = new System.Drawing.Size(278, 19);
+            this.txtPerfil.Size = new System.Drawing.Size(278, 26);
             this.txtPerfil.TabIndex = 23;
             this.txtPerfil.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -411,11 +419,159 @@
             this.label14.TabIndex = 22;
             this.label14.Text = "Perfil";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(268, 413);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(130, 26);
+            this.textBox1.TabIndex = 24;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label15.Location = new System.Drawing.Point(265, 392);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 18);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "Banco";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label16.Location = new System.Drawing.Point(426, 392);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(108, 18);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "Tipo de Conta";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(429, 413);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(130, 26);
+            this.textBox2.TabIndex = 26;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label17.Location = new System.Drawing.Point(590, 392);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 18);
+            this.label17.TabIndex = 29;
+            this.label17.Text = "Agência";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(590, 413);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(130, 26);
+            this.textBox3.TabIndex = 28;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label18.Location = new System.Drawing.Point(751, 392);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(50, 18);
+            this.label18.TabIndex = 31;
+            this.label18.Text = "Conta";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(751, 413);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(130, 26);
+            this.textBox4.TabIndex = 30;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label19.Location = new System.Drawing.Point(265, 455);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(145, 18);
+            this.label19.TabIndex = 33;
+            this.label19.Text = "Data de Pagamento";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(268, 476);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(130, 26);
+            this.textBox5.TabIndex = 32;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label20.Location = new System.Drawing.Point(426, 455);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 18);
+            this.label20.TabIndex = 35;
+            this.label20.Text = "Senha";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(429, 476);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(130, 26);
+            this.textBox6.TabIndex = 34;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFechar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.ForeColor = System.Drawing.Color.Red;
+            this.btnFechar.Location = new System.Drawing.Point(1172, 12);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(19, 27);
+            this.btnFechar.TabIndex = 36;
+            this.btnFechar.Text = "x";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 642);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtPerfil);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.txtStatus);
@@ -438,8 +594,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnVoltar);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormUsuario";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormUsuario";
+            this.Load += new System.EventHandler(this.FormUsuario_Load);
             this.btnVoltar.ResumeLayout(false);
             this.btnVoltar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -482,5 +645,18 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtPerfil;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

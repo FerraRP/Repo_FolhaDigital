@@ -32,5 +32,76 @@ namespace FolhaFigital_Projeto.view
 
             this.Hide();
         }
+
+        private void btnSenha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFolhaPagamento_Click(object sender, EventArgs e)
+        {
+            FolhaPagamento TelaPagamento = new FolhaPagamento();
+            TelaPagamento.Show();
+
+            this.Hide();
+        }
+
+        private void listView5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            MeuPerfil TelaPerfil = new MeuPerfil();
+            TelaPerfil.Show();
+
+            this.Hide();
+        }
     }
 }

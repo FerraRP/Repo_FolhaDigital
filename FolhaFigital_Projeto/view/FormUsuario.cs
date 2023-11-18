@@ -57,5 +57,50 @@ namespace FolhaFigital_Projeto.view
         {
 
         }
+
+        private void txtStatus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCpf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -8,6 +8,8 @@ namespace FolhaFigital_Projeto.model.bean
 {
     internal class UsuarioBean
     {
+        private int v;
+
         public int Id { get; set; }
         public string nome { get; set; }
         public int matricula { get; set; }
@@ -18,12 +20,9 @@ namespace FolhaFigital_Projeto.model.bean
         public string perfil { get; set; }
         public string senha {  get; set; } 
         public string status {  get; set; }
+        public int id_retorno { get; set; }
 
-        public UsuarioBean() 
-        {
-        }
-
-        public UsuarioBean(int id)
+        public UsuarioBean(int id, int idRetorno)
         {
             this.Id = id;
         }
@@ -42,9 +41,24 @@ namespace FolhaFigital_Projeto.model.bean
 
         }
 
-        public override string ToString()
+        public UsuarioBean(string Nome, int Matricula, string Email, long Telefone, DateTime Data_nascimento, long Cpf, string Senha, string Status, string Perfil, int idRetorno)
         {
-            return "[ ID Usuário: " +Id+ "Nome: " +nome+ "Matricula: " +matricula+ "E-mail: " +email+ "Telefone: " +telefone+ "CPF: " +cpf+ "Senha: " +senha+ "Status: " +status+ "]";
+            this.nome = Nome;
+            this.matricula = Matricula;
+            this.email = Email;
+            this.telefone = Telefone;
+            this.data_nascimento = Data_nascimento;
+            this.cpf = Cpf;
+            this.senha = Senha;
+            this.status = Status;
+            this.perfil = Perfil;
+            this.id_retorno = idRetorno;
+        }
+
+        public UsuarioBean(int v)
+        {
+            this.v = v;
         }
     }
 }
+//

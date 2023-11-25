@@ -8,15 +8,15 @@ using System.Windows.Forms;
 
 namespace FolhaFigital_Projeto.model.bean.TelaUsuario.Banco
 {
-    internal class EnderecoEditar
+    internal class BancoEditar
     {
-        public bool EnderecoEditValidado;
+        public bool BancoEditValidado;
         public String mensagem = "";
 
-        public String AlterarEndereco(EnderecoBean Endrent, UsuarioBean useEnt)
+        public String AlterarBanco(BancoBean BancEnt, UsuarioBean useEnt)
         {
-            ValidaEndereco EnderecoEditarValida = new ValidaEndereco();
-            this.mensagem = EnderecoEditarValida.AlterarEndereco(Endrent, useEnt);
+            ValidaBanco BancoEditarValid = new ValidaBanco();
+            this.mensagem = BancoEditarValid.AlterarBanco(BancEnt, useEnt);
 
 
             MessageBox.Show("modelo de endereço ok");

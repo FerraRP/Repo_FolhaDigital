@@ -41,7 +41,7 @@ namespace FolhaFigital_Projeto.controller.Usuario
                 url.desconectar();
 
                 this.mensagem = "Cadastrado com sucesso!";
-                MessageBox.Show("Conntroller de Emdereco  ok");
+                MessageBox.Show("Controller de Emdereco  ok");
 
             }
             catch (SqlException)
@@ -50,6 +50,63 @@ namespace FolhaFigital_Projeto.controller.Usuario
             }
             return mensagem;
 
+        }
+        //
+        public String AlterarEndereco(EnderecoBean EndrEnt, UsuarioBean useEnt)
+        {
+            cmd.CommandText = "update empresa set cep = @cep, Logradouro = @Logradouro, numero = @numero, bairro = @bairro, cidade = @cidade, estado = @estado, complemento = @complemento where Fk_EndUsuario = @Fk_EndUsuario";
+            cmd.Parameters.AddWithValue("@cep", EndrEnt.cep);
+            cmd.Parameters.AddWithValue("@Logradouro", EndrEnt.logradouro);
+            cmd.Parameters.AddWithValue("@numero", EndrEnt.numero);
+            cmd.Parameters.AddWithValue("@bairro", EndrEnt.bairro);
+            cmd.Parameters.AddWithValue("@cidade", EndrEnt.cidade);
+            cmd.Parameters.AddWithValue("@estado", EndrEnt.estado);
+            cmd.Parameters.AddWithValue("@complemento", EndrEnt.complemento);
+            cmd.Parameters.AddWithValue("@Fk_EndUsuario", useEnt.id_retorno);
+
+            try
+            {
+                cmd.Connection = url.conectar();
+                cmd.ExecuteNonQuery();
+                url.desconectar();
+
+                MessageBox.Show("Editar banco ok");
+
+            }
+            catch (SqlException)
+            {
+                this.mensagem = "Erro com o banco de dados baancario";
+            }
+            return mensagem;
+
+        }
+
+        public string ExcluirEndereco(UsuarioBean useEnt)
+        {
+            return ExcluirEndereco(useEnt.id_retorno);
+        }
+        public string ExcluirEndereco(int FkUsuario)
+        {
+
+            cmd.CommandText = $"delete from endereco where Fk_EndUsuario = {FkUsuario};";
+            cmd.Parameters.AddWithValue("@IdRetorno", FkUsuario);
+
+            try
+            {
+                cmd.Connection = url.conectar();
+                cmd.ExecuteNonQuery();
+                url.desconectar();
+
+                this.mensagem = "Excluido com sucesso!";
+
+                MessageBox.Show("Controler de excluir endeereço ok");
+
+            }
+            catch (SqlException)
+            {
+                this.mensagem = "Erro com o banco de dados endeereço ao excluir";
+            }
+            return mensagem;
         }
     }
 }

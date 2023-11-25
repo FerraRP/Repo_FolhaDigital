@@ -52,18 +52,22 @@
     <Compile Include="controller\Usuario\ValidaEndereco.cs" />
     <Compile Include="controller\Usuario\ValidaUsuario.cs" />
     <Compile Include="model\bean\TelaUsuario\BancoBean.cs" />
+    <Compile Include="model\bean\TelaUsuario\Banco\BancoCadastrar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Banco\BancoEditar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Banco\BancoEsxcluir.cs" />
     <Compile Include="model\bean\TelaUsuario\EmpresaBean.cs" />
+    <Compile Include="model\bean\TelaUsuario\Empresa\EmpresaCadastrar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Empresa\EmpresaEditar.cs" />
+    <Compile Include="model\bean\TelaUsuario\Empresa\EmpresaExcluir.cs" />
     <Compile Include="model\bean\TelaUsuario\EnderecoBean.cs" />
     <Compile Include="model\bean\Login\ModelLogin.cs" />
-    <Compile Include="model\bean\TelaUsuario\Endereco\EnderecoBuscar.cs" />
     <Compile Include="model\bean\TelaUsuario\Endereco\EnderecoCadastrar.cs" />
     <Compile Include="model\bean\TelaUsuario\Endereco\EnderecoEditar.cs" />
     <Compile Include="model\bean\TelaUsuario\Endereco\EnderecoExcluir.cs" />
-    <Compile Include="model\bean\TelaUsuario\Usuario\UseBuscar.cs" />
     <Compile Include="model\bean\TelaUsuario\Usuario\UseCadastrar.cs" />
     <Compile Include="model\bean\TelaUsuario\Usuario\UseEditar.cs" />
-    <Compile Include="model\bean\TelaUsuario\Usuario\UseExcluir.cs" />
     <Compile Include="model\bean\TelaUsuario\UsuarioBean.cs" />
+    <Compile Include="model\bean\TelaUsuario\Usuario\UserExcluir.cs" />
     <Compile Include="model\dao\ConexaoDb.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,10 +120,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="model\bean\TelaUsuario\Banco\" />
-    <Folder Include="model\bean\TelaUsuario\Empresa\" />
-    <Folder Include="script\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
